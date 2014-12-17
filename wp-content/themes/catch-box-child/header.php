@@ -45,6 +45,39 @@
  */
 do_action( 'catchbox_before' ); ?>
 
+    <header id="branding" role="banner">
+
+        <?php
+        /**
+         * catchbox_before_headercontent hook
+         */
+        do_action( 'catchbox_before_headercontent' ); ?>
+
+        <div id="header-content" class="clearfix">
+
+            <?php
+            /**
+             * catchbox_headercontent hook
+             *
+             * @hooked catchbox_headerdetails - 10
+             * @hooked catchbox_header_search - 15
+             */
+            do_action( 'catchbox_headercontent' ); ?>
+
+         <?php
+        /**
+         * catchbox_after_headercontent hook
+         *
+         * @hooked catchbox_header_menu - 10
+         */
+        do_action( 'catchbox_after_headercontent' ); ?>
+
+        </div><!-- #header-content -->
+
+
+
+    </header><!-- #branding -->
+
 <div id="page" class="hfeed">
 
 	<?php
@@ -54,36 +87,7 @@ do_action( 'catchbox_before' ); ?>
     do_action( 'catchbox_before_header' );
     ?>
 
-	<header id="branding" role="banner">
 
-    	<?php
-		/**
-		 * catchbox_before_headercontent hook
-		 */
-		do_action( 'catchbox_before_headercontent' ); ?>
-
-    	<div id="header-content" class="clearfix">
-
-			<?php
-            /**
-             * catchbox_headercontent hook
-             *
-             * @hooked catchbox_headerdetails - 10
-			 * @hooked catchbox_header_search - 15
-             */
-			do_action( 'catchbox_headercontent' ); ?>
-
-		</div><!-- #header-content -->
-
-    	<?php
-		/**
-		 * catchbox_after_headercontent hook
-		 *
-         * @hooked catchbox_header_menu - 10
-		 */
-		do_action( 'catchbox_after_headercontent' ); ?>
-
-	</header><!-- #branding -->
 
 	<?php
     /**

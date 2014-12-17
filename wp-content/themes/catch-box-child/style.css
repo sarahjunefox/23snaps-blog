@@ -73,6 +73,8 @@ body {
     margin: 0 3%;
     padding: 2.5em 0;
 	position: relative;
+	width: 1000px;
+	margin: 0 auto;
 }
 #access div,
 #access-secondary div,
@@ -240,10 +242,10 @@ body, input, textarea {
 	-webkit-font-smoothing: antialiased;
 }
 body {
-	background: #ccc;
+	background: #E9EAEC;
 }
 #page {
-	background: #eee;
+	background: #FFF;
 	-moz-border-radius: 5px;
     border-radius: 5px;
 }
@@ -457,8 +459,8 @@ a:hover {
 	padding-bottom: 10px;
 	position: relative;
 	z-index: 21;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
 }
 #site-title {
 	padding: 0;

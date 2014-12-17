@@ -88,5 +88,5 @@ jQuery(function () {
   jQuery('#access .menu').tinyNav({
 	active: 'current-menu-item'
   });
-  
+
 });
